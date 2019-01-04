@@ -10,7 +10,7 @@ namespace hwapp
       int playing = 0;
       int playerWins = 0;
       int compWins = 0;
-      Console.WriteLine("Best of 5!");
+      Console.WriteLine("Tournament style, best of 5!");
       Console.WriteLine("Make your choice: rock, paper, scissors");
 
       while (playing < 5)
@@ -65,7 +65,7 @@ namespace hwapp
 
         if (playerWins == 3)
         {
-          Console.WriteLine("Game over, player wins!");
+          Console.WriteLine("WOO HOO! Player wins!");
         }
         else if (compWins == 3)
         {
@@ -75,13 +75,16 @@ namespace hwapp
         {
           playing = 5;
         }
-        else if (playerWins > 4 && compWins > 3)
+        else if (playerWins > 4 && compWins < 3)
         {
-          Console.WriteLine("Game over, player wins!");
+          Console.WriteLine("WOO HOO! Player wins!");
+          playing = 5;
         }
         else if (compWins > 4 && playerWins < 3)
         {
+          playing = 5;
           Console.WriteLine("Game over, computer wins!");
+          Console.Beep();
         };
       };
     }
