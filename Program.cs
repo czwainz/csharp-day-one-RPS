@@ -77,7 +77,7 @@ namespace hwapp
         }
         else if (playerWins > 4 && compWins < 3)
         {
-          Console.WriteLine("WOO HOO! Player wins!");
+          Console.WriteLine("WOO HOOO! Player wins!");
           playing = 5;
         }
         else if (compWins > 4 && playerWins < 3)
