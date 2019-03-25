@@ -10,7 +10,7 @@ namespace hwapp
       int playing = 0;
       int playerWins = 0;
       int compWins = 0;
-      Console.WriteLine("Tournament style, best of 5!");
+      Console.WriteLine("Tournament style, best of 5!!");
       Console.WriteLine("Make your choice: rock, paper, scissors");
 
       while (playing < 5)
@@ -23,7 +23,7 @@ namespace hwapp
 
         string userChoice = Console.ReadLine().ToLower();
 
-        Console.WriteLine($"Your choice is { userChoice } & the computer's choice is {compChoice}");
+        Console.WriteLine($"Your choice is { userChoice } & the computer chose {compChoice}");
 
         if (compChoice == userChoice)
         {
