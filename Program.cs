@@ -10,7 +10,7 @@ namespace hwapp
       int playing = 0;
       int playerWins = 0;
       int compWins = 0;
-      Console.WriteLine("Tournament style, best of 5!!");
+      Console.WriteLine("Tournament style, best of 5!!!");
       Console.WriteLine("Make your choice: rock, paper, scissors");
 
       while (playing < 5)
